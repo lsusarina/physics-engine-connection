@@ -5,13 +5,13 @@
 ## Скриншоты выполненного задания:
 
 Начальное положение камеры:
-![Alt text](image.png)
+![Alt text](images/image.png)
 
 Вид при прыжке:
-![Alt text](image-1.png)
+![Alt text](images/image-1.png)
 
 Вид при сталкивании со сферой (сфера перекатывается):
-![Alt text](image-2.png)
+![Alt text](images/image-2.png)
 
 Падение:
-![Alt text](image-3.png)
+![Alt text](images/image-3.png)
