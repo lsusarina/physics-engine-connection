@@ -28,7 +28,9 @@ interface Crosshair {
 
 export async function initScene(scene: Scene) {
   scene.getEngine().displayLoadingUI();
+
   scene.enablePhysics(null, new CannonJSPlugin());
+  
   const light = new HemisphericLight("light", new Vector3(0, 1, 0), scene);
   light.intensity = 0.7;
   const camera = new UniversalCamera("camera", new Vector3(0, 0, 0), scene);
@@ -56,10 +58,10 @@ export async function initScene(scene: Scene) {
   );
 
   scene.clearColor = new Color4(0.75, 0.75, 0.9, 1.0);
-  scene.collisionsEnabled = true;
+  //scene.collisionsEnabled = true;
 
   const sphere = CreateSphere("sphere", { diameter: 5 }, scene);
-  sphere.checkCollisions = true;
+  //sphere.checkCollisions = true;
   sphere.position = new Vector3(0, 2.5, 5);
   sphere.physicsImpostor = new PhysicsImpostor(sphere, PhysicsImpostor.SphereImpostor, {
     mass: 1,
@@ -189,7 +191,7 @@ async function createEnviroment(scene: Scene) {
   );
 
   meshes.forEach((mesh) => {
-    mesh.checkCollisions = true;
+    //mesh.checkCollisions = true;
 
     if (mesh.name === "Floor") {
       mesh.parent = null;
